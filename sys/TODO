@@ -1,0 +1,75 @@
+TODO
+-----------------------------------
+
+
+----------------DB Locations table-----------------
+id_country
+id_region
+child_count
+
+
+
+--------------Locales---------------
+In header display a select to choose the locale.
+
+We will try to detect the locale from the browser. Once a locale is selected we keep it as cookie.
+
+Anywhere in the site can pass as paramenter ?locale=es_ES
+
+All the other actions will be filtered by the locale chosed.
+
+
+-------------------API-----------------------
+They accept parameter locale! and parameter chained, if chained set only return ID:name
+
+/api/chained/countries.json
+/api/chained/regions.json?country=IDCOUNTRY
+/api/chained/cities.json?region=IDREGION OR ?country=IDCOUNTRY
+
+/api/countries.json
+/api/regions.json?country=IDCOUNTRY
+/api/cities.json?region=IDREGION OR ?country=IDCOUNTRY only_top = 1
+
+
+--------------------TEMPLATE----------------
+
+Header
+Main
+Footer (open classifieds, yclas, vultr banner)
+https://my.vultr.com/affiliate/
+http://www.vultr.com/?ref=6822249
+
+
+-----------------CONTROLLERS----------
+
+/
+About the project
+Api usage example
+
+DB model.
+
+
+/countries.html (controller location countries)
+Will list all the countries
+
+Link to big ZIP with world DB
+
+
+/COUNTRY_SEONAME.html (controller location country)
+Lists all the regions of the country
+Zip country to download
+List of all the region ZIPs to download
+
+
+/COUNTRY_SEONAME/REGION_SEONAME.html (controller location region)
+Breadcrumb
+Num of cities.
+Cities paginated 500 each
+Zip to download that region
+
+
+---------------------------Zip format------------------
+world.zip
+world-es_ES.zip
+COUNTRY_SEONAME-es_ES.zip
+COUNTRY_SEONAME___REGION_SEONAME-es_ES.zip

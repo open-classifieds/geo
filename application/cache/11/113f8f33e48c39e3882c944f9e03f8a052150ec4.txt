@@ -1,0 +1,1 @@
+a:1:{i:0;a:9:{s:11:"id_location";s:7:"1018564";s:18:"id_location_parent";s:7:"1001269";s:3:"iso";s:12:"ES-56-113935";s:4:"name";s:9:"Barcelona";s:7:"seoname";s:9:"Barcelona";s:4:"type";s:2:"CI";s:11:"parent_deep";s:1:"2";s:7:"geo_lat";s:14:"41.38330000000";s:7:"geo_lng";s:13:"2.18330000000";}}
