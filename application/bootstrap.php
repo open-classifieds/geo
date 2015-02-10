@@ -103,7 +103,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
 Kohana::init(array(
-	'base_url'   => '/',
+	'base_url'   => 'http://'.$_SERVER['SERVER_NAME'].'/',
     'index_file' => FALSE,
 ));
 
@@ -149,20 +149,47 @@ Cookie::$salt = 'SADKE_yFKJ4_ok';
 Cache::$default = Core::config('cache.default');
 
 
-
+//api
 Route::set('api', 'api/<action>.json')
     ->defaults(array(
         'controller' => 'API',
     ));
 
+//lists all the countries
+Route::set('countries', 'countries.html')
+    ->defaults(array(
+        'controller' => 'Location',
+        'action'     => 'countries',
+    ));
 
+//info about 1 country
+Route::set('country', '<country>.html')
+    ->defaults(array(
+        'controller' => 'Location',
+        'action'     => 'country',
+    ));
+
+//info about 1 region
+Route::set('region', '<country>/<region>.html')
+    ->defaults(array(
+        'controller' => 'Location',
+        'action'     => 'region',
+    ));
+
+//home page
+Route::set('home', '')
+    ->defaults(array(
+        'controller' => 'home',
+        'action'     => 'index',
+    ));
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
+/*
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
 		'controller' => 'home',
 		'action'     => 'index',
-	));
+	));*/

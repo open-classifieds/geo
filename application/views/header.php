@@ -4,7 +4,7 @@
     <nav>
       <ul class="nav nav-pills pull-right">
         <li role="presentation" class="active"><a href="/">Home</a></li>
-        <li role="presentation"><a href="<?=Route::URL('default',array('controller'=>'location','action'=>'countries'))?>">Countries</a></li>
+        <li role="presentation"><a href="<?=Route::URL('countries')?>">Countries</a></li>
         <li role="presentation"><a href="">API</a></li>
       </ul>
     </nav>

@@ -7,7 +7,7 @@ id_country
 id_region
 child_count
 
-
+Find top cities each country, mark them in the DB.
 
 --------------Locales---------------
 In header display a select to choose the locale.
@@ -22,22 +22,10 @@ All the other actions will be filtered by the locale chosed.
 -------------------API-----------------------
 They accept parameter locale! and parameter chained, if chained set only return ID:name
 
-/api/chained/countries.json
-/api/chained/regions.json?country=IDCOUNTRY
-/api/chained/cities.json?region=IDREGION OR ?country=IDCOUNTRY
-
 /api/countries.json
 /api/regions.json?country=IDCOUNTRY
 /api/cities.json?region=IDREGION OR ?country=IDCOUNTRY only_top = 1
 
-
---------------------TEMPLATE----------------
-
-Header
-Main
-Footer (open classifieds, yclas, vultr banner)
-https://my.vultr.com/affiliate/
-http://www.vultr.com/?ref=6822249
 
 
 -----------------CONTROLLERS----------
@@ -50,12 +38,15 @@ DB model.
 
 
 /countries.html (controller location countries)
+ABCEDARY in top
+A - Andorra bla bla bla
 Will list all the countries
 
 Link to big ZIP with world DB
 
 
 /COUNTRY_SEONAME.html (controller location country)
+Stats: Num regions, num countries
 Lists all the regions of the country
 Zip country to download
 List of all the region ZIPs to download
@@ -63,8 +54,8 @@ List of all the region ZIPs to download
 
 /COUNTRY_SEONAME/REGION_SEONAME.html (controller location region)
 Breadcrumb
-Num of cities.
-Cities paginated 500 each
+Statis, Num of cities.
+Cities paginated alphabetically
 Zip to download that region
 
 
@@ -73,3 +64,17 @@ world.zip
 world-es_ES.zip
 COUNTRY_SEONAME-es_ES.zip
 COUNTRY_SEONAME___REGION_SEONAME-es_ES.zip
+
+
+--------------readme file---------------
+
+---------------sitemap.xml-------------
+All the possible urls
+
+
+
+-------------Ideas-----------
+API next to me? use html5 lat long and X km to return JSON of cities
+https://github.com/estebanav/javascript-mobile-desktop-geolocation
+http://www.w3schools.com/htmL/html5_geolocation.asp
+https://github.com/AppGeo/geo

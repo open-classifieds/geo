@@ -59,3 +59,77 @@
 #5 /var/www/worlddb/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
 #6 /var/www/worlddb/www/index.php(112): Kohana_Request->execute()
 #7 {main} in /var/www/worlddb/application/classes/Controller/API.php:30
+2015-02-10 16:47:45 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined method URL::current() ~ APPPATH/classes/Core.php [ 119 ] in file:line
+2015-02-10 16:47:45 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-02-10 16:48:21 --- EMERGENCY: ErrorException [ 2 ]: Invalid argument supplied for foreach() ~ APPPATH/views/countries.php [ 3 ] in /var/www/worlddb/application/views/countries.php:3
+2015-02-10 16:48:21 --- DEBUG: #0 /var/www/worlddb/application/views/countries.php(3): Kohana_Core::error_handler(2, 'Invalid argumen...', '/var/www/worldd...', 3, Array)
+#1 /var/www/worlddb/system/classes/Kohana/View.php(62): include('/var/www/worldd...')
+#2 /var/www/worlddb/system/classes/Kohana/View.php(359): Kohana_View::capture('/var/www/worldd...', Array)
+#3 /var/www/worlddb/system/classes/Kohana/View.php(236): Kohana_View->render()
+#4 /var/www/worlddb/application/views/main.php(127): Kohana_View->__toString()
+#5 /var/www/worlddb/system/classes/Kohana/View.php(62): include('/var/www/worldd...')
+#6 /var/www/worlddb/system/classes/Kohana/View.php(359): Kohana_View::capture('/var/www/worldd...', Array)
+#7 /var/www/worlddb/application/classes/Controller/Template.php(72): Kohana_View->render()
+#8 /var/www/worlddb/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /var/www/worlddb/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Location))
+#11 /var/www/worlddb/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /var/www/worlddb/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#13 /var/www/worlddb/www/index.php(112): Kohana_Request->execute()
+#14 {main} in /var/www/worlddb/application/views/countries.php:3
+2015-02-10 17:11:38 --- EMERGENCY: ErrorException [ 1 ]: Call to undefined function mod() ~ APPPATH/views/countries.php [ 25 ] in file:line
+2015-02-10 17:11:38 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2015-02-10 17:18:40 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: A ~ APPPATH/classes/Controller/Location.php [ 12 ] in /var/www/worlddb/application/classes/Controller/Location.php:12
+2015-02-10 17:18:40 --- DEBUG: #0 /var/www/worlddb/application/classes/Controller/Location.php(12): Kohana_Core::error_handler(8, 'Undefined index...', '/var/www/worldd...', 12, Array)
+#1 /var/www/worlddb/system/classes/Kohana/Controller.php(84): Controller_Location->action_countries()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /var/www/worlddb/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Location))
+#4 /var/www/worlddb/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /var/www/worlddb/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#6 /var/www/worlddb/www/index.php(112): Kohana_Request->execute()
+#7 {main} in /var/www/worlddb/application/classes/Controller/Location.php:12
+2015-02-10 17:19:19 --- EMERGENCY: ErrorException [ 8 ]: Undefined variable: letter ~ APPPATH/views/countries.php [ 11 ] in /var/www/worlddb/application/views/countries.php:11
+2015-02-10 17:19:19 --- DEBUG: #0 /var/www/worlddb/application/views/countries.php(11): Kohana_Core::error_handler(8, 'Undefined varia...', '/var/www/worldd...', 11, Array)
+#1 /var/www/worlddb/system/classes/Kohana/View.php(62): include('/var/www/worldd...')
+#2 /var/www/worlddb/system/classes/Kohana/View.php(359): Kohana_View::capture('/var/www/worldd...', Array)
+#3 /var/www/worlddb/system/classes/Kohana/View.php(236): Kohana_View->render()
+#4 /var/www/worlddb/application/views/main.php(128): Kohana_View->__toString()
+#5 /var/www/worlddb/system/classes/Kohana/View.php(62): include('/var/www/worldd...')
+#6 /var/www/worlddb/system/classes/Kohana/View.php(359): Kohana_View::capture('/var/www/worldd...', Array)
+#7 /var/www/worlddb/application/classes/Controller/Template.php(72): Kohana_View->render()
+#8 /var/www/worlddb/system/classes/Kohana/Controller.php(87): Controller_Template->after()
+#9 [internal function]: Kohana_Controller->execute()
+#10 /var/www/worlddb/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Location))
+#11 /var/www/worlddb/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#12 /var/www/worlddb/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#13 /var/www/worlddb/www/index.php(112): Kohana_Request->execute()
+#14 {main} in /var/www/worlddb/application/views/countries.php:11
+2015-02-10 17:20:52 --- EMERGENCY: ErrorException [ 8 ]: Array to string conversion ~ APPPATH/classes/Controller/Location.php [ 12 ] in /var/www/worlddb/application/classes/Controller/Location.php:12
+2015-02-10 17:20:52 --- DEBUG: #0 /var/www/worlddb/application/classes/Controller/Location.php(12): Kohana_Core::error_handler(8, 'Array to string...', '/var/www/worldd...', 12, Array)
+#1 /var/www/worlddb/system/classes/Kohana/Controller.php(84): Controller_Location->action_countries()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /var/www/worlddb/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Location))
+#4 /var/www/worlddb/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /var/www/worlddb/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#6 /var/www/worlddb/www/index.php(112): Kohana_Request->execute()
+#7 {main} in /var/www/worlddb/application/classes/Controller/Location.php:12
+2015-02-10 17:23:17 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: A ~ APPPATH/classes/Controller/Location.php [ 13 ] in /var/www/worlddb/application/classes/Controller/Location.php:13
+2015-02-10 17:23:17 --- DEBUG: #0 /var/www/worlddb/application/classes/Controller/Location.php(13): Kohana_Core::error_handler(8, 'Undefined index...', '/var/www/worldd...', 13, Array)
+#1 /var/www/worlddb/system/classes/Kohana/Controller.php(84): Controller_Location->action_countries()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /var/www/worlddb/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Location))
+#4 /var/www/worlddb/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /var/www/worlddb/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#6 /var/www/worlddb/www/index.php(112): Kohana_Request->execute()
+#7 {main} in /var/www/worlddb/application/classes/Controller/Location.php:13
+2015-02-10 17:23:42 --- EMERGENCY: ErrorException [ 8 ]: Undefined index: A ~ APPPATH/classes/Controller/Location.php [ 13 ] in /var/www/worlddb/application/classes/Controller/Location.php:13
+2015-02-10 17:23:42 --- DEBUG: #0 /var/www/worlddb/application/classes/Controller/Location.php(13): Kohana_Core::error_handler(8, 'Undefined index...', '/var/www/worldd...', 13, Array)
+#1 /var/www/worlddb/system/classes/Kohana/Controller.php(84): Controller_Location->action_countries()
+#2 [internal function]: Kohana_Controller->execute()
+#3 /var/www/worlddb/system/classes/Kohana/Request/Client/Internal.php(97): ReflectionMethod->invoke(Object(Controller_Location))
+#4 /var/www/worlddb/system/classes/Kohana/Request/Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 /var/www/worlddb/system/classes/Kohana/Request.php(997): Kohana_Request_Client->execute(Object(Request))
+#6 /var/www/worlddb/www/index.php(112): Kohana_Request->execute()
+#7 {main} in /var/www/worlddb/application/classes/Controller/Location.php:13
