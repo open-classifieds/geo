@@ -19,7 +19,7 @@
 
 
     <div class="col-lg-4">
-        <h4><?=$country->name?></h4>
+        <h4><a href="<?=Route::URL('country',array('country' => $country->seoname))?>"><?=$country->name?></a></h4>
         <p><?print_r($country)?></p>
     </div>
 <?endforeach?>

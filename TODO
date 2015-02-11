@@ -38,16 +38,12 @@ DB model.
 
 
 /countries.html (controller location countries)
-ABCEDARY in top
 A - Andorra bla bla bla
-Will list all the countries
-
 Link to big ZIP with world DB
 
 
 /COUNTRY_SEONAME.html (controller location country)
-Stats: Num regions, num countries
-Lists all the regions of the country
+Stats: Num regions, num cities
 Zip country to download
 List of all the region ZIPs to download
 

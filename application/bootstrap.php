@@ -162,13 +162,6 @@ Route::set('countries', 'countries.html')
         'action'     => 'countries',
     ));
 
-//info about 1 country
-Route::set('country', '<country>.html')
-    ->defaults(array(
-        'controller' => 'Location',
-        'action'     => 'country',
-    ));
-
 //info about 1 region
 Route::set('region', '<country>/<region>.html')
     ->defaults(array(
@@ -176,12 +169,31 @@ Route::set('region', '<country>/<region>.html')
         'action'     => 'region',
     ));
 
+//info about 1 country
+Route::set('country', '<country>.html')
+    ->defaults(array(
+        'controller' => 'Location',
+        'action'     => 'country',
+    ));
+
+
+
 //home page
 Route::set('home', '')
     ->defaults(array(
         'controller' => 'home',
         'action'     => 'index',
     ));
+
+/**
+ * Error router
+ */
+Route::set('error', 'error/<action>(/<message>)',
+array('action' => '[0-9]++','message' => '.+'))
+->defaults(array(
+    'controller' => 'Error',
+    'action'     => 'index'
+));
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
